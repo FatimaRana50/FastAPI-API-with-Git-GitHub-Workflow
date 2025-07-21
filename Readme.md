@@ -207,7 +207,7 @@ ReDoc: http://127.0.0.1:8000/redoc
 
 API Demo with Screenshots
 GET with Query Parameter – Search
-<table> <tr> <td><b>Input</b></td> <td><b>Output</b></td> </tr> <tr> <td><img src="images/f-2.png" alt="Search Input" width="400"/></td> <td><img src="images/f-3.png" alt="Search Output" width="400"/></td> </tr> </table>
+<table> <tr> <td><b>Input</b></td> <td><b>Output</b></td> </tr> <tr> <td><img src="images/f-2.PNG" alt="Search Input" width="400"/></td> <td><img src="images/f-3.PNG" alt="Search Output" width="400"/></td> </tr> </table>
 POST Request with JSON Body
 <table> <tr> <td><b>Input</b></td> <td><b>Output</b></td> </tr> <tr> <td><img src="images/f-4.png" alt="POST Input" width="400"/></td> <td><img src="images/f-5.png" alt="POST Output" width="400"/></td> </tr> </table>
 File Upload
