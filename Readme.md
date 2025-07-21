@@ -1,222 +1,218 @@
-🚀 FastAPI Project – Git & GitHub Integration
-Welcome to this FastAPI project! This README will guide you through setting up the project, using version control with Git and GitHub, and contributing effectively through GitHub Desktop.
+# FastAPI Project – Git & GitHub Integration
 
- Table of Contents
- What is Version Control?
+This repository demonstrates a simple web API using **FastAPI**, along with a complete **Git and GitHub** workflow using **GitHub Desktop**. It includes examples for GET (with path and query parameters), POST requests with Pydantic models, and file upload handling.
 
- Introduction to Git
+---
 
- Introduction to GitHub
+## Table of Contents
 
- Introduction to GitHub Desktop
+- [Version Control](#version-control)
+- [Introduction to Git](#introduction-to-git)
+- [Introduction to GitHub](#introduction-to-github)
+- [GitHub Desktop Overview](#github-desktop-overview)
+- [Setting Up GitHub Desktop](#setting-up-github-desktop)
+- [Creating a Repository](#creating-a-repository)
+- [Git Workflow with GitHub Desktop](#git-workflow-with-github-desktop)
+- [Branching and Merging](#branching-and-merging)
+- [Understanding Pull Requests](#understanding-pull-requests)
+- [Stashing Changes](#stashing-changes)
+- [Resolving Merge Conflicts](#resolving-merge-conflicts)
+- [Using .gitignore](#using-gitignore)
+- [Best Git Practices](#best-git-practices)
+- [Setting Up and Running the Project](#setting-up-and-running-the-project)
+- [API Demo with Screenshots](#api-demo-with-screenshots)
 
- Setting Up GitHub Desktop
+---
 
- Creating a Repository
+## Version Control
 
- Git Workflow with GitHub Desktop (Using This Project)
+Version control enables developers to track changes, collaborate, and revert code when needed. It is essential for:
 
- Branching and Merging
+- Preventing loss of code
+- Collaborating across teams
+- Reproducing previous working versions
 
- Understanding Pull Requests (PRs)
+---
 
- Stashing Changes (Optional)
+## Introduction to Git
 
- Resolving Merge Conflicts
+Git is a **distributed version control system** that tracks project snapshots, not just file differences. 
 
- Using .gitignore
+**Key Concepts:**
+- **Repository:** Project folder tracked by Git
+- **Commit:** A saved state of the project
+- **Branch:** An independent line of development
+- **Merge:** Combining branches together
 
- Best Git Practices
+---
 
- Setting Up and Running the Project
+## Introduction to GitHub
 
-What is Version Control?
-Version control lets you track changes to your code, collaborate with others, and revert mistakes. It's essential in software projects to:
+GitHub is a cloud-based platform for Git repositories, providing:
 
-Avoid code loss.
+- Online backups
+- Team collaboration
+- Pull request-based workflows
 
-Collaborate across teams.
+---
 
-Reproduce exact versions for debugging.
+## GitHub Desktop Overview
 
-Introduction to Git
-Git is a distributed version control system. Instead of tracking file changes line-by-line like older systems, Git takes snapshots of your entire project.
+**GitHub Desktop** provides a graphical interface to interact with Git and GitHub.
 
-Key Concepts:
+**Benefits:**
+- Visualize changes
+- Easily commit and push
+- Manage branches and resolve conflicts
 
-Repository: Your project and its history.
+---
 
-Commit: A snapshot with a message describing the changes.
+## Setting Up GitHub Desktop
 
-Branch: A separate line of development.
+1. Download: https://desktop.github.com/
+2. Install and open the application.
+3. Sign in using your GitHub account.
 
-Merge: Combining changes from branches.
+---
 
-Introduction to GitHub
-GitHub is a cloud-based hosting platform for Git repositories. It allows you to:
+## Creating a Repository
 
-Backup your code online.
+### Option 1: New Local Repository
+- Open GitHub Desktop → File → New Repository
+- Set name, path, description → Create
 
-Collaborate with others.
+### Option 2: Clone Remote Repository
+- File → Clone Repository → Enter URL  
+  Example:
+  ```
+  `https://github.com/FatimaRana50/FastAPI-API-with-Git-GitHub-Workflow`
+  ```
+---
 
-Review code and manage issues.
+## Git Workflow with GitHub Desktop
 
-Introduction to GitHub Desktop
-GitHub Desktop is a user-friendly GUI for Git. It allows you to:
+### Making Changes
+Edit any file (e.g., `main.py`).
 
-Visualize changes and history.
+### Staging Changes
+Review file diffs and select files to stage.
 
-Easily stage, commit, and push changes.
+### Committing Changes
+Write a descriptive commit message (e.g., `Add GET endpoint with path param`) and commit.
 
-Work with branches and pull requests.
+### Pushing Changes
+Click `Push origin` to send your commits to GitHub.
 
-Setting Up GitHub Desktop
-Download from: https://desktop.github.com/
+### Pulling Changes
+Use `Fetch origin` → `Pull` to update local repo with remote changes.
 
-Install and open GitHub Desktop.
+---
 
-Sign in with your GitHub account.
+## Branching and Merging
 
-Creating a Repository
-Option 1: Create a new local repo
-Open GitHub Desktop → File → New Repository
+### Why Branch?
+Branching allows isolated work without affecting the `main` branch.
 
-Name it, choose a path, and click Create Repository.
+### Creating and Switching Branches
+- Branch → New Branch (e.g., `feature/file-upload`)
+- Use branch dropdown to switch between branches
 
-Option 2: Clone an existing remote repo
-In GitHub Desktop → File → Clone Repository
+### Merging
+- Branch → Merge into current branch
+- Resolve conflicts if needed, then commit the merge
 
-Select from GitHub or paste a repo URL.
+---
 
-Git Workflow with GitHub Desktop (Using This Project)
-1. Making Changes
-Edit any file (e.g., main.py or README.md) in your code editor.
+## Understanding Pull Requests
 
-2. Staging Changes
-GitHub Desktop shows all modified files. Select the ones you want to include.
+**Pull Requests (PRs)** propose code changes from one branch to another.
 
-3. Committing Changes
-Write a clear commit message, like Added FastAPI root endpoint, and click Commit to main.
+### Steps:
+1. Push branch to GitHub
+2. Click "Compare & Pull Request"
+3. Add description, reviewers
+4. Review and Merge the PR
 
-4. Pushing Changes
-Click Push origin to upload your commits to GitHub.
+---
 
-5. Pulling Changes
-Click Fetch origin → Pull to sync with any changes made remotely.
+## Stashing Changes
 
-Branching and Merging
-Why Branch?
-Branching lets you work on new features or bug fixes without affecting the main codebase.
+Stash temporarily saves your uncommitted changes:
+- GitHub Desktop → Branch → Stash Changes
+- Later, apply the stash to continue work
 
-Common branch names:
-feature/file-upload
+---
 
-bugfix/input-validation
+## Resolving Merge Conflicts
 
-GitHub Desktop makes it easy:
-Create: Branch → New Branch
+Conflicts happen when changes clash. GitHub Desktop will:
+- Show conflicting files
+- Allow you to open and resolve conflicts
+- Mark files as resolved and commit
 
-Switch: Click current branch → Select another
+---
 
-Merge: Click Branch → Merge into current branch
+## Using .gitignore
 
-Understanding Pull Requests (PRs)
-A Pull Request proposes changes from one branch to another (usually into main).
-
-Steps:
-Push your feature branch to GitHub.
-
-On GitHub, click Compare & Pull Request.
-
-Review changes, add comments if needed.
-
-After review, click Merge Pull Request.
-
-Stashing Changes (Optional)
-If you need to switch tasks:
-
-Use GitHub Desktop to stash uncommitted changes.
-
-Later, reapply the stash to continue.
-
-Resolving Merge Conflicts
-Merge conflicts happen when changes clash.
-
-In GitHub Desktop:
-It shows conflicting files.
-
-Open in editor → manually fix → mark as resolved.
-
-Commit the resolution.
-
-Using .gitignore
-Avoid committing unnecessary files by adding them to .gitignore.
-
-Recommended entries for FastAPI:
-markdown
-Copy
-Edit
-__pycache__/
-.env
-*.pyc
-*.pyo
-*.pyd
-*.sqlite3
+`.gitignore` avoids tracking unwanted files. Typical FastAPI ignores:
+```
+pycache/
+*.py[cod]
 venv/
-.env.*
-Best Git Practices
-Commit often with meaningful messages.
+.env
+```
 
-Use branches for new features.
 
-Make small, focused pull requests.
+---
 
-Sync frequently using pull.
+## Best Git Practices
 
-Use GitHub Issues to track bugs and features.
+- Make frequent, small commits with clear messages
+- Use feature branches
+- Keep pull requests focused
+- Regularly pull from the remote repository
+- Use issues to track tasks and bugs
 
-Setting Up and Running the Project
-1. Clone the repo
-bash
-Copy
-Edit
-git clone https://github.com/your-username/your-fastapi-repo.git
-cd your-fastapi-repo
-2. Create a virtual environment
-bash
-Copy
-Edit
+---
+
+## Setting Up and Running the Project
+
+### Clone the Repository
+
+```bash
+git clone https://github.com/FatimaRana50/FastAPI-API-with-Git-GitHub-Workflow.git
+cd FastAPI-API-with-Git-GitHub-Workflow
+```
+Create a Virtual Environment
+```t
 python -m venv venv
-source venv/bin/activate      # macOS/Linux
-venv\Scripts\activate         # Windows
-3. Install dependencies
-bash
-Copy
-Edit
+venv\Scripts\activate  # For Windows
+# or
+source venv/bin/activate  # For macOS/Linux
+```
+Install Dependencies
+```
 pip install -r requirements.txt
-4. Run the FastAPI server
-bash
-Copy
-Edit
+```
+Run the FastAPI Server
+```
 uvicorn main:app --reload
-5. Open in browser:
-Swagger Docs: http://127.0.0.1:8000/docs
+```
+Access the API
+```
+Swagger UI: http://127.0.0.1:8000/docs
 
 ReDoc: http://127.0.0.1:8000/redoc
+```
 
-requirements.txt
-Here’s what your requirements.txt should include:
-
-nginx
-Copy
-Edit
-fastapi
-uvicorn
-pydantic
-python-multipart
-(You can run pip freeze > requirements.txt to update it later.)
-
-Final Words
-This project is a simple but powerful example of using FastAPI with full Git and GitHub workflow, perfect for learning how to manage both code and collaboration effectively.
-
-Happy coding! 🚀
+API Demo with Screenshots
+GET with Query Parameter – Search
+<table> <tr> <td><b>Input</b></td> <td><b>Output</b></td> </tr> <tr> <td><img src="images/f-2.png" alt="Search Input" width="400"/></td> <td><img src="images/f-3.png" alt="Search Output" width="400"/></td> </tr> </table>
+POST Request with JSON Body
+<table> <tr> <td><b>Input</b></td> <td><b>Output</b></td> </tr> <tr> <td><img src="images/f-4.png" alt="POST Input" width="400"/></td> <td><img src="images/f-5.png" alt="POST Output" width="400"/></td> </tr> </table>
+File Upload
+<table> <tr> <td><b>Upload File</b></td> <td><b>Upload Response</b></td> </tr> <tr> <td><img src="images/f-6.png" alt="Upload File" width="400"/></td> <td><img src="images/f-7.png" alt="Upload Output" width="400"/></td> </tr> </table>
+GET with Path Parameter
+<table> <tr> <td><b>Input</b></td> <td><b>Output</b></td> </tr> <tr> <td><img src="images/f-8.png" alt="Path Param Input" width="400"/></td> <td><img src="images/f-9.png" alt="Path Param Output" width="400"/></td> </tr> </table>
+About
+This repository is a complete beginner-friendly guide to building and versioning a FastAPI project using Git, GitHub, and GitHub Desktop.
