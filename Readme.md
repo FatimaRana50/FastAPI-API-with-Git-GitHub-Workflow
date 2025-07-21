@@ -209,10 +209,10 @@ API Demo with Screenshots
 GET with Query Parameter – Search
 <table> <tr> <td><b>Input</b></td> <td><b>Output</b></td> </tr> <tr> <td><img src="images/f-2.PNG" alt="Search Input" width="400"/></td> <td><img src="images/f-3.PNG" alt="Search Output" width="400"/></td> </tr> </table>
 POST Request with JSON Body
-<table> <tr> <td><b>Input</b></td> <td><b>Output</b></td> </tr> <tr> <td><img src="images/f-4.png" alt="POST Input" width="400"/></td> <td><img src="images/f-5.png" alt="POST Output" width="400"/></td> </tr> </table>
+<table> <tr> <td><b>Input</b></td> <td><b>Output</b></td> </tr> <tr> <td><img src="images/f-4.PNG" alt="POST Input" width="400"/></td> <td><img src="images/f-5.PNG" alt="POST Output" width="400"/></td> </tr> </table>
 File Upload
-<table> <tr> <td><b>Upload File</b></td> <td><b>Upload Response</b></td> </tr> <tr> <td><img src="images/f-6.png" alt="Upload File" width="400"/></td> <td><img src="images/f-7.png" alt="Upload Output" width="400"/></td> </tr> </table>
+<table> <tr> <td><b>Upload File</b></td> <td><b>Upload Response</b></td> </tr> <tr> <td><img src="images/f-6.PNG" alt="Upload File" width="400"/></td> <td><img src="images/f-7.PNG" alt="Upload Output" width="400"/></td> </tr> </table>
 GET with Path Parameter
-<table> <tr> <td><b>Input</b></td> <td><b>Output</b></td> </tr> <tr> <td><img src="images/f-8.png" alt="Path Param Input" width="400"/></td> <td><img src="images/f-9.png" alt="Path Param Output" width="400"/></td> </tr> </table>
+<table> <tr> <td><b>Input</b></td> <td><b>Output</b></td> </tr> <tr> <td><img src="images/f-8.PNG" alt="Path Param Input" width="400"/></td> <td><img src="images/f-9.PNG" alt="Path Param Output" width="400"/></td> </tr> </table>
 About
 This repository is a complete beginner-friendly guide to building and versioning a FastAPI project using Git, GitHub, and GitHub Desktop.
